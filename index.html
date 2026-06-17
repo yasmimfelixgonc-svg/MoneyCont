@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoneyCont Criar Conta</title>
+<link rel="stylesheet" href="./css/styles.css"/>
+</head>
+<body class="bg-cream font-inter text-text-dark min-h-screen">
+
+  <!-- ── NAV ── -->
+  <nav class="bg-green-deep px-12 h-16 flex items-center gap-12">
+    <a href="#" class="flex items-center gap-3 no-underline">
+      <div class="flex items-end gap-[3px] h-6">
+        <span class="block w-1 rounded-sm bg-green-light" style="height:8px"></span>
+        <span class="block w-1 rounded-sm bg-green-light" style="height:12px"></span>
+        <span class="block w-1 rounded-sm bg-green-light" style="height:16px"></span>
+        <span class="block w-1 rounded-sm bg-green-light" style="height:20px"></span>
+        <span class="block w-1 rounded-sm bg-green-light" style="height:24px"></span>
+      </div>
+       <span class="font-playfair text-xl text-white font-bold">
+        Money<span class="text-green-light">Cont</span>
+      </span>
+    </a>
+    <a href="#" class="text-[.8rem] text-white/50 no-underline hover:text-green-light transition-colors duration-200">
+      Já tenho conta → Entrar
+    </a>
+  </nav>
+
+  <!-- ── PAGE ── -->
+  <div class="grid grid-cols-1 lg:grid-cols-2 min-h-[calc(100vh-64px)]">
+
+    <!-- ── PAINEL ESQUERDO — FORMULÁRIO ── -->
+    <div class="flex flex-col justify-center px-8 py-14 lg:px-14">
+
+      <!-- Cabeçalho -->
+      <div class="mb-9">
+        <p class="text-[.7rem] font-semibold tracking-[.12em] uppercase text-green-fresh mb-2">
+          Cadastro gratuito
+        </p>
+        <h1 class="font-playfair text-[2rem] font-black text-green-deep tracking-tight leading-tight">
+          Crie sua conta
+        </h1>
+        <p class="mt-2 text-sm text-text-muted">
+          Preencha os dados abaixo e comece a controlar seu dinheiro hoje mesmo.
+        </p>
+      </div>
+
+      <!-- Steps -->
+      <div class="flex items-center mb-9">
+        <div class="flex items-center gap-2 text-[.72rem] font-semibold uppercase tracking-[.06em] text-green-deep cursor-pointer">
+          <div class="w-7 h-7 rounded-full flex items-center justify-center text-[.75rem] font-bold bg-green-deep border-2 border-green-deep text-white">
+            1
+          </div>
+          Dados pessoais
+        </div>
+        <div class="flex-1 h-px bg-green-deep/20 mx-2"></div>
+        <div class="flex items-center gap-2 text-[.72rem] font-semibold uppercase tracking-[.06em] text-text-muted cursor-pointer">
+          <div class="w-7 h-7 rounded-full flex items-center justify-center text-[.75rem] font-bold border-2 border-green-deep/20 text-text-muted">
+            2
+          </div>
+          Acesso
+        </div>
+        <div class="flex-1 h-px bg-green-deep/20 mx-2"></div>
+        <div class="flex items-center gap-2 text-[.72rem] font-semibold uppercase tracking-[.06em] text-text-muted cursor-pointer">
+          <div class="w-7 h-7 rounded-full flex items-center justify-center text-[.75rem] font-bold border-2 border-green-deep/20 text-text-muted">
+            3
+          </div>
+          Perfil
+        </div>
+      </div>
+
+      <!-- Form Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+        <!-- Nome completo -->
+        <div class="flex flex-col gap-1 col-span-1 sm:col-span-2">
+          <label class="text-[.75rem] font-semibold text-text-dark tracking-[.04em] uppercase">
+            Nome completo
+          </label>
+          <div class="relative">
+                    <input type="text" placeholder="Seu nome completo"
+              class="w-full h-[46px] bg-white border border-green-deep/20 rounded-[10px] pl-10 pr-3.5 text-sm font-inter text-text-dark outline-none transition-all duration-200"/>
+          </div>
+        </div>
+
+        <!-- CPF -->
+        <div class="flex flex-col gap-1">
+          <label class="text-[.75rem] font-semibold text-text-dark tracking-[.04em] uppercase">
+            CPF
+          </label>
+          <div class="relative">
+           
+            <input type="text" id="cpf" placeholder="000.000.000-00"
+              class="w-full h-[46px] bg-white border border-green-deep/20 rounded-[10px] pl-10 pr-3.5 text-sm font-inter text-text-dark outline-none transition-all duration-200"/>
+          </div>
+        </div>
+
+        <!-- Telefone -->
+        <div class="flex flex-col gap-1">
+          <label class="text-[.75rem] font-semibold text-text-dark tracking-[.04em] uppercase">
+            WhatsApp / Telefone
+          </label>
+          <div class="relative">
+            <input type="tel" id="telefone" placeholder="(11) 99999-9999"
+              class="w-full h-[46px] bg-white border border-green-deep/20 rounded-[10px] pl-10 pr-3.5 text-sm font-inter text-text-dark outline-none transition-all duration-200"/>
+          </div>
+        </div>
+
+        <!-- Endereço -->
+        <div class="flex flex-col gap-1 col-span-1 sm:col-span-2">
+          <label class="text-[.75rem] font-semibold text-text-dark tracking-[.04em] uppercase">
+            Endereço
+          </label>
+          <div class="relative">
+            
+            <input type="text" placeholder="Rua, número, bairro"
+              class="w-full h-[46px] bg-white border border-green-deep/20 rounded-[10px] pl-10 pr-3.5 text-sm font-inter text-text-dark outline-none transition-all duration-200"/>
+          </div>
+        </div>
+
+        <!-- Cidade -->
+        <div class="flex flex-col gap-1">
+          <label class="text-[.75rem] font-semibold text-text-dark tracking-[.04em] uppercase">
+            Cidade
+          </label>
+          <div class="relative">
+            
+            <input type="text" placeholder="Sua cidade"
+              class="w-full h-[46px] bg-white border border-green-deep/20 rounded-[10px] pl-10 pr-3.5 text-sm font-inter text-text-dark outline-none transition-all duration-200"/>
+          </div>
+        </div>
+
+        <!-- País -->
+        <div class="flex flex-col gap-1">
+          <label class="text-[.75rem] font-semibold text-text-dark tracking-[.04em] uppercase">
+            País
+          </label>
+          <div class="relative">
+            
+            <input type="text" placeholder="Brasil"
+              class="w-full h-[46px] bg-white border border-green-deep/20 rounded-[10px] pl-10 pr-3.5 text-sm font-inter text-text-dark outline-none transition-all duration-200"/>
+          </div>
+        </div>
+
+        <!-- E-mail -->
+        <div class="flex flex-col gap-1 col-span-1 sm:col-span-2">
+          <label class="text-[.75rem] font-semibold text-text-dark tracking-[.04em] uppercase">
+            E-mail
+          </label>
+          <div class="relative">
+            
+            <input type="email" placeholder="seu@email.com"
+              class="w-full h-[46px] bg-white border border-green-deep/20 rounded-[10px] pl-10 pr-3.5 text-sm font-inter text-text-dark outline-none transition-all duration-200"/>
+          </div>
+        </div>
+
+        <!-- Senha -->
+        <div class="flex flex-col gap-1">
+          <label class="text-[.75rem] font-semibold text-text-dark tracking-[.04em] uppercase">
+            Senha
+          </label>
+          <div class="relative">
+            
+            <input type="password" id="senha" placeholder="Mín. 8 caracteres"
+              oninput="checkStrength(this.value)"
+              class="w-full h-[46px] bg-white border border-green-deep/20 rounded-[10px] pl-10 pr-10 text-sm font-inter text-text-dark outline-none transition-all duration-200"/>
+            <button type="button" onclick="togglePwd('senha',this)"
+              class="absolute right-3.5 top-1/2 -translate-y-1/2 bg-transparent border-none cursor-pointer text-text-muted flex items-center p-0">
+              <svg class="w-4 h-4 stroke-current" fill="none" viewBox="0 0 24 24" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+            </button>
+          </div>
+          <div class="h-[3px] rounded-sm bg-green-deep/20 mt-1.5 overflow-hidden">
+            <div class="strength-fill h-full w-0 rounded-sm" id="strengthFill" style="background:#52b788"></div>
+          </div>
+          <span class="text-[.68rem] text-text-muted mt-1" id="strengthLabel">Digite sua senha</span>
+        </div>
+
+        <!-- Confirmar senha -->
+        <div class="flex flex-col gap-1">
+          <label class="text-[.75rem] font-semibold text-text-dark tracking-[.04em] uppercase">
+            Confirmar senha
+          </label>
+          <div class="relative">
+           
+            <input type="password" id="confirmaSenha" placeholder="Repita sua senha"
+              class="w-full h-[46px] bg-white border border-green-deep/20 rounded-[10px] pl-10 pr-10 text-sm font-inter text-text-dark outline-none transition-all duration-200"/>
+            <button type="button" onclick="togglePwd('confirmaSenha',this)"
+              class="absolute right-3.5 top-1/2 -translate-y-1/2 bg-transparent border-none cursor-pointer text-text-muted flex items-center p-0">
+              <svg class="w-4 h-4 stroke-current" fill="none" viewBox="0 0 24 24" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Botão Continuar -->
+      <button class="flex items-center justify-center gap-2 w-full h-[50px] rounded-xl bg-green-deep text-white text-[.95rem] font-semibold font-inter border-none cursor-pointer mt-6 transition-all duration-200 shadow-lg hover:bg-green-mid hover:-translate-y-px">
+        Continuar
+        <svg class="w-[18px] h-[18px] stroke-current" fill="none" viewBox="0 0 24 24" stroke-width="2.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+        </svg>
+      </button>
+
+      <p class="text-center mt-4 text-[.8rem] text-text-muted">
+        Já tem conta?
+        <a href="#" class="text-green-mid font-semibold no-underline hover:underline">Entrar agora</a>
+      </p>
+
+    </div>
+
+    <!-- ── PAINEL DIREITO — PERFIL ── -->
+    <div class="choice-panel bg-green-deep flex flex-col items-center justify-center px-12 py-14 relative overflow-hidden">
+
+      <div class="text-center mb-10 relative z-10">
+        <p class="text-[.7rem] font-semibold tracking-[.12em] uppercase text-green-light mb-2">
+          Seu perfil financeiro
+        </p>
+        <h2 class="font-playfair text-[1.7rem] font-black text-white tracking-tight leading-tight">
+          Qual é o seu objetivo<br>com o MoneyCont?
+        </h2>
+        <p class="text-white/50 text-sm mt-2">
+          Escolha o que melhor descreve você — vamos personalizar sua experiência.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 gap-4 w-full max-w-sm relative z-10">
+
+        <div onclick="selectCard(this)"
+          class="choice-card bg-white/10 border border-white/10 rounded-[18px] p-7 cursor-pointer text-center transition-all duration-200 relative hover:bg-green-fresh/20 hover:border-green-fresh hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center mx-auto mb-3.5">
+            <svg class="w-6 h-6 stroke-green-light" fill="none" viewBox="0 0 24 24" stroke-width="1.8">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <h3 class="font-playfair text-base font-bold text-white mb-1.5">Mão na Massa</h3>
+          <p class="text-[.72rem] text-white/50 leading-relaxed">Quero organizar meu orçamento e sair das dívidas</p>
+        </div>
+
+        <div onclick="selectCard(this)"
+          class="choice-card bg-white/10 border border-white/10 rounded-[18px] p-7 cursor-pointer text-center transition-all duration-200 relative hover:bg-green-fresh/20 hover:border-green-fresh hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center mx-auto mb-3.5">
+            <svg class="w-6 h-6 stroke-green-light" fill="none" viewBox="0 0 24 24" stroke-width="1.8">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941"/>
+            </svg>
+          </div>
+          <h3 class="font-playfair text-base font-bold text-white mb-1.5">Investimentos</h3>
+          <p class="text-[.72rem] text-white/50 leading-relaxed">Quero fazer meu dinheiro crescer e construir patrimônio</p>
+        </div>
+
+        <div onclick="selectCard(this)"
+          class="choice-card bg-white/10 border border-white/10 rounded-[18px] p-7 cursor-pointer text-center transition-all duration-200 relative hover:bg-green-fresh/20 hover:border-green-fresh hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center mx-auto mb-3.5">
+            <svg class="w-6 h-6 stroke-green-light" fill="none" viewBox="0 0 24 24" stroke-width="1.8">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5"/>
+            </svg>
+          </div>
+          <h3 class="font-playfair text-base font-bold text-white mb-1.5">Descobrir método</h3>
+          <p class="text-[.72rem] text-white/50 leading-relaxed">Não sei por onde começar, preciso de orientação</p>
+        </div>
+
+        <div onclick="selectCard(this)"
+          class="choice-card bg-white/10 border border-white/10 rounded-[18px] p-7 cursor-pointer text-center transition-all duration-200 relative hover:bg-green-fresh/20 hover:border-green-fresh hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center mx-auto mb-3.5">
+            <svg class="w-6 h-6 stroke-green-light" fill="none" viewBox="0 0 24 24" stroke-width="1.8">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/>
+            </svg>
+          </div>
+          <h3 class="font-playfair text-base font-bold text-white mb-1.5">Reserva de emergência</h3>
+          <p class="text-[.72rem] text-white/50 leading-relaxed">Quero criar uma reserva segura para imprevistos</p>
+        </div>
+
+      </div>
+
+      <p class="mt-7 text-center text-[.8rem] text-white/40 relative z-10">
+        Você pode <strong class="text-green-light">mudar isso depois</strong> nas configurações do perfil.
+      </p>
+
+      <div class="mt-8 w-full max-w-sm flex flex-col gap-2.5 relative z-10">
+        <div class="flex items-center gap-2.5 text-[.8rem] text-white/60">
+         
+          100% gratuito para começar
+        </div>
+        <div class="flex items-center gap-2.5 text-[.8rem] text-white/60">
+          
+          Seus dados protegidos com criptografia
+        </div>
+        <div class="flex items-center gap-2.5 text-[.8rem] text-white/60">
+          
+          Sem anúncios ou spam no seu e-mail
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="./js/moneycont.js"></script>
+
+</body>
+</html>
